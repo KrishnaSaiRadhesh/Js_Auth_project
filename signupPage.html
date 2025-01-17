@@ -219,6 +219,7 @@
         createUserWithEmailAndPassword(auth, email, password)
             .then(() => {
                 showToast('success', 'Registration Successful');
+                window.location.href = "index.html"
             })
             .catch(() => {
                 showToast('failure', 'User already exists');
@@ -244,6 +245,7 @@
 
         setTimeout(() => toast.remove(), 3000);
     }
+    
 </script>
 </body>
 </html>
